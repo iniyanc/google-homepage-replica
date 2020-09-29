@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-color: blue;
+    border-width: 3px;
+    width: 100%;
+    height: 10px;
+
+    position: fixed;
+    top: 400px;
+    left: 0;
+}
+
+#search-form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "bar bar" "search lucky";
+    justify-items: center;
+    align-items: center;
+    width: 582px;
+}
+
+#logo{
+    max-width: 272px;
+    padding: 50px 0px;
+}
+
+#search-bar{
+    grid-area: bar;
+    width: 584px;
+    height: 46px;
+    border-radius: 40px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0, 0.1);
+    box-shadow: none;
+}
+
+#search{
+    grid-area: search;
+    margin-left: 160px;
+}
+
+#lucky{
+    grid-area: lucky;
+    margin-right: 160px;
+}
+
+
+input[type="submit"]{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 127.41px;
+    height: 36;
+    padding: 10px 0px;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: #5F6368;
+    background-color: #f2f2f2;
+    border: 0px;
+}
+
+
+
+
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-button{
+    padding: 10px 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #5F6368;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+#top-gap{
+    width: 80%;
+}
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #f2f2f2;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#bot-gap{
+    width: 70%;
+}
